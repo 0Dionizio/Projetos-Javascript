@@ -65,9 +65,10 @@ const saveClient = () => { //Função feita para salvar os clientes
       updateTable();
       closeModal();
     } else { //Caso a condição não for satisfeita, será executada
+      document.getElementById("nome").dataset.index = 'new';
       updateClient(index, client);
       updateTable();
-      closeModal()
+      closeModal();
     }
   } 
 } 
